@@ -65,4 +65,4 @@ gulp.task('deploy-gh-pages', function() {
 });
 
 // Run production-build, and deploy-gh-pages
-gulp.task('deploy', gulp.series('production-build', 'sass', 'icons', 'deploy-gh-pages'));
+gulp.task('deploy', gulp.series('production-build', 'sass', 'fonts', 'icons', 'deploy-gh-pages'));

@@ -1,7 +1,7 @@
 # Site Config
 name: "IBM Makes"
 description: Making at IBM
-baseurl: "/makers"
+baseurl: "/ibm-studios/makers"
 url: pages.github.ibm.com/ibm-studios/makers
 
 # Build Settings
