@@ -1,0 +1,37 @@
+@mixin font-size($i) {
+  $font-progression-steps: 4;
+  @if $i > $font-progression-steps or $i < -1 {
+    @warn 'Progression step #{$i} is outside of the ideal -1, 1-4 scope';
+  }
+  @else if $i > -2 {
+    font-size: font-progression-math($i);
+  }
+  @else {
+    @warn 'Progression step must be positive';
+  }
+}
+
+@mixin font-1 {
+  @include font-size(4);
+  line-height: $font-1-line-height;
+}
+
+@mixin font-2 {
+  @include font-size(3);
+  line-height: $font-2-line-height;
+}
+
+@mixin font-3 {
+  @include font-size(2);
+  line-height: $font-3-line-height;
+}
+
+@mixin font-4 {
+  @include font-size(1);
+  line-height: $font-4-line-height;
+}
+
+@mixin font-5 {
+  @include font-size(-1);
+  line-height: $font-4-line-height;
+}
