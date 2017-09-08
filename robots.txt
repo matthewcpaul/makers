@@ -1,1 +1,1 @@
-Sitemap: pages.github.ibm.com/ibm-studios/makers/makers/sitemap.xml
+Sitemap: pages.github.ibm.com/ibm-studios/makers/ibm-studios/makers/sitemap.xml
