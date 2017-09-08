@@ -3,14 +3,10 @@ $font-size-change: 32rem;
 html, :root {
 	$font-fallback: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-family: 'PlexSans', $font-fallback;
-	font-size: 0.875rem;
+	font-size: 1rem;
 	line-height: 1.5;
 	color: $gray-dark;
 	box-sizing: border-box;
-
-	@include breakpoint($font-size-change) {
-		font-size: 1rem;
-	}
 }
 
 body {
