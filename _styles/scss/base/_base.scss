@@ -1,0 +1,26 @@
+$font-size-change: 32rem;
+
+html, :root {
+	$font-fallback: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'PlexSans', $font-fallback;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	color: $gray-dark;
+	box-sizing: border-box;
+
+	@include breakpoint($font-size-change) {
+		font-size: 1rem;
+	}
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
+
+::selection {
+	color: $white;
+	background: $primary;
+}

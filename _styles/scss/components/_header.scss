@@ -1,0 +1,14 @@
+// Global namespace for header component
+$header-namespace: "c-header" !default;
+
+.#{$header-namespace} {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	&__title {
+		text-decoration: none;
+	}
+}
