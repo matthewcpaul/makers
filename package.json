@@ -1,13 +1,13 @@
 {
-  "name": "gulp-jekyll",
+  "name": "ibm-makes",
   "version": "0.0.0",
-  "description": "A basic Jekyll build set up with gulp, gulp-sass, browser-sync, and gulp-gh-pages",
+  "description": "Making at IBM",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/matthewcpaul/jekyll-gulp.git"
+    "url": "git@github.ibm.com:ibm-studios/makers.git"
   },
-  "author": "Matthew C. Paul",
+  "author": "",
   "license": "ISC",
   "scripts": {
     "start": "gulp"
