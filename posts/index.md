@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Blog
-order: 0
+order: 2
+headline: Blog
 ---
 
 {% for posts in site.posts %}

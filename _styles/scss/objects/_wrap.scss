@@ -2,11 +2,11 @@
 $wrap-namespace: "o-wrap" !default;
 
 // Global width for wrapper
-$wrap-width: 64rem !default;
+$wrap-width: 100vw !default;
 
 .#{$wrap-namespace} {
     display: block;
     max-width: $wrap-width;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 3rem;
 }

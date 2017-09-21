@@ -1,7 +1,7 @@
 // Global namespace for nav component
 $nav-namespace: "c-nav" !default;
-$nav-item-margin-lg: 2rem;
-$nav-item-margin-sm: 1rem;
+$nav-item-margin-lg: 3rem;
+$nav-item-margin-sm: 2rem;
 $nav-item-bp: 32rem;
 
 .#{$nav-namespace} {
