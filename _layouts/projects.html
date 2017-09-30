@@ -1,21 +1,17 @@
 {% include root.html %}
 
 <div class="flex-main">
-
-{% include header.html %}
-
-		<main class="o-main" role="main">
-				<div class="o-grid__thirds">
-					<h1 class="o-grid-child__one-thirds f1 u-mb-5 u-px-3">{{ page.headline }}</h1>
-				</div>
-				<ul class="c-project__grid">
-					{{ content }}
-				</ul>
-		</main>
+	{% include header.html %}
+	<main class="o-main" role="main">
+			<div class="o-grid-six">
+				<h1 class="f1 o-grid-six__child c-headline">{{ page.headline }}</h1>
+			</div>
+			<ul class="c-project__grid">
+				{{ content }}
+			</ul>
+	</main>
 </div>
 
 <div class="flex-footer">
-
-{% include footer.html %}
-
+	{% include footer.html %}
 </div>
