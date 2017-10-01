@@ -1,4 +1,4 @@
 ---
-layout: default
+layout: project
 headline: Grass Boots
 ---

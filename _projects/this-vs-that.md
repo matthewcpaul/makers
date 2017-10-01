@@ -1,4 +1,4 @@
 ---
-layout: default
+layout: project
 headline: This vs That
 ---
