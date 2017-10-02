@@ -7,7 +7,7 @@ url: pages.github.ibm.com/ibm-studios/makers
 # Build Settings
 markdown: kramdown
 highlighter: true
-permalink: blog/:title
+permalink: /blog/:title.html
 
 # In/ Excludes
 include: [".htaccess"]
