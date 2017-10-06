@@ -38,6 +38,23 @@ $project-grid-3: 92rem;
   &__list-anchor {
     display: flex;
     position: relative;
+    overflow: hidden;
+
+    &:hover {
+
+      & .c-project__overlay {
+        position: absolute;
+        width: 100vw;
+        height: 100vw;
+        background-color: #003bc9;
+        opacity: 0.75;
+        z-index: 1;
+      }
+
+      & .c-project__image {
+        transform: rotate(8deg) scale(1.15);
+      }
+    }
   }
 
   &__image {
@@ -45,22 +62,21 @@ $project-grid-3: 92rem;
   }
 
   &__title-container {
-    display: flex;
-    align-items: center;
     position: absolute;
     bottom: 0;
     right: 0;
     background-color: $white;
     width: 50%;
+    padding: 2rem $spacing-sm 2.5rem $spacing-sm;
+    z-index: 2;
+
+    @include breakpoint(32rem) {
+      padding: 2.5rem $spacing-md 2.5rem $spacing-md;
+    }
   }
 
   &__title {
-    padding: 2rem $spacing-sm 6rem $spacing-sm;
-
-    @include breakpoint(32rem) {
-      padding: 2rem $spacing-md 6rem $spacing-md;
-    }
-
+    margin-bottom: $spacing-xs;
   }
 }
 

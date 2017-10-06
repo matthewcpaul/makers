@@ -22,3 +22,7 @@ $font-prefix: "f" !default;
     @include font-4;
   }
 }
+
+.f-caption {
+  color: $gray-light;
+}
