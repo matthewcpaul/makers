@@ -1,5 +1,5 @@
-$project-grid-2: 50rem;
-$project-grid-3: 92rem;
+$project-grid-2: 46rem;
+$project-grid-3: 85rem;
 
 .c-project {
 
@@ -42,23 +42,19 @@ $project-grid-3: 92rem;
 
     &:hover {
 
-      & .c-project__overlay {
-        position: absolute;
-        width: 100vw;
-        height: 100vw;
-        background-color: #003bc9;
-        opacity: 0.75;
-        z-index: 1;
+      & .c-project__image {
+        transform: rotate(-4deg) scale(1.125);
       }
 
-      & .c-project__image {
-        transform: rotate(8deg) scale(1.15);
+      & .c-project__title-container {
+        padding-right: $spacing-lg;
       }
     }
   }
 
   &__image {
     object-fit: cover;
+    transition: all .25s ease-in-out;
   }
 
   &__title-container {
@@ -66,17 +62,13 @@ $project-grid-3: 92rem;
     bottom: 0;
     right: 0;
     background-color: $white;
-    width: 50%;
-    padding: 2rem $spacing-sm 2.5rem $spacing-sm;
-    z-index: 2;
-
-    @include breakpoint(32rem) {
-      padding: 2.5rem $spacing-md 2.5rem $spacing-md;
-    }
+    padding: $spacing-sm $spacing-md;
+    z-index: 1;
+    transition: padding .25s ease-in-out;
   }
 
   &__title {
-    margin-bottom: $spacing-xs;
+    margin-bottom: $spacing-xxs;
   }
 }
 
