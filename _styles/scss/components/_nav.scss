@@ -24,6 +24,8 @@ $nav-item-bp: 32rem;
 	&__link {
 		text-decoration: none;
 		color: $gray-light;
+		border-bottom: 1px solid transparent;
+		padding-bottom: $spacing-xs;
 
 		&:hover {
 			color: $gray-dark;
@@ -31,6 +33,7 @@ $nav-item-bp: 32rem;
 
 		&.active {
 			color: $gray-dark;
+			border-bottom: 1px solid $gray-dark;
 		}
 	}
 }
