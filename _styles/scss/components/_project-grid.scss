@@ -44,10 +44,16 @@ $project-grid-3: 85rem;
 
       & .c-project__image {
         transform: rotate(-4deg) scale(1.125);
+        opacity: .75;
       }
 
       & .c-project__title-container {
         padding-right: $spacing-lg;
+      }
+
+      & .c-project__icon {
+        opacity: 1;
+        right: $spacing-md;
       }
     }
   }
@@ -58,6 +64,8 @@ $project-grid-3: 85rem;
   }
 
   &__title-container {
+    display: flex;
+    align-items: center;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -69,6 +77,14 @@ $project-grid-3: 85rem;
 
   &__title {
     margin-bottom: $spacing-xxs;
+  }
+
+  &__icon {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    margin-left: $spacing-sm;
+    transition: all .25s ease-in-out;
   }
 }
 
