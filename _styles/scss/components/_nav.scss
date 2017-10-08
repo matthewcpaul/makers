@@ -1,8 +1,11 @@
 // Global namespace for nav component
 $nav-namespace: "c-nav" !default;
 $nav-item-margin-lg: 3rem;
-$nav-item-margin-sm: 2rem;
-$nav-item-bp: 32rem;
+$nav-item-margin-md: 1.5rem;
+$nav-item-margin-sm: 0.5rem;
+$nav-item-md-bp: 22rem;
+$nav-item-lg-bp: 32rem;
+$nav-item-xl-bp: 45rem;
 
 .#{$nav-namespace} {
 	padding-left: 0;
@@ -14,9 +17,19 @@ $nav-item-bp: 32rem;
 
 		+.#{$nav-namespace}__item {
 			margin-left: $nav-item-margin-sm;
+			margin-top: 1.5rem;
 
-			@include breakpoint($nav-item-bp) {
+			@include breakpoint($nav-item-md-bp) {
+				margin-left: $nav-item-margin-md;
+			}
+
+			@include breakpoint($nav-item-lg-bp) {
 				margin-left: $nav-item-margin-lg;
+				margin-top: 2rem;
+			}
+
+			@include breakpoint($nav-item-xl-bp) {
+				margin-top: 0;
 			}
 		}
 	}

@@ -1,12 +1,19 @@
 // Global namespace for header component
 $header-namespace: "c-header" !default;
+$header-bp: 45rem;
 
 .#{$header-namespace} {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	flex-direction: column;
+	align-items: flex-start;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
+
+	@include breakpoint($header-bp) {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
 
 	&__title {
 		text-decoration: none;
