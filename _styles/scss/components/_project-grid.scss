@@ -1,7 +1,7 @@
+.c-project {
 $project-grid-2: 46rem;
 $project-grid-3: 85rem;
-
-.c-project {
+$animation-speed: .4s;
 
   &__grid {
     display: grid;
@@ -60,7 +60,7 @@ $project-grid-3: 85rem;
 
   &__image {
     object-fit: cover;
-    transition: all .25s ease-in-out;
+    transition: all $animation-speed ease-in-out;
   }
 
   &__title-container {
@@ -72,7 +72,7 @@ $project-grid-3: 85rem;
     background-color: $white;
     padding: $spacing-sm $spacing-md;
     z-index: 1;
-    transition: padding .25s ease-in-out;
+    transition: padding $animation-speed ease-in-out;
   }
 
   &__title {
@@ -84,7 +84,7 @@ $project-grid-3: 85rem;
     position: absolute;
     right: 0;
     margin-left: $spacing-sm;
-    transition: all .25s ease-in-out;
+    transition: all $animation-speed ease-in-out;
   }
 }
 
