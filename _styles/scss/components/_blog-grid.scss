@@ -1,0 +1,27 @@
+.c-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 0;
+  padding: 0;
+
+  &__content {
+    grid-column: 1 / span 6;
+    padding: 0 $spacing-sm;
+
+    @include breakpoint(32rem) {
+      padding: 0 $spacing-md;
+    }
+
+    @include breakpoint(45rem) {
+      grid-column: 1 / span 5;
+    }
+
+    @include breakpoint(52rem) {
+      grid-column: 1 / span 4;
+    }
+
+    @include breakpoint(76rem) {
+      grid-column: 1 / span 3;
+    }
+  }
+}
