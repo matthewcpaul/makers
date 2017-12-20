@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Post Title
-author: Noelle Hoffman
+author: Matthew Paul
 thumb: ../images/dd-framed.png
 ---
 

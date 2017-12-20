@@ -1,7 +1,7 @@
 ---
-layout: blog
+layout: blog-post
 title: Post Title
-author: Noelle Hoffman
+author: Patrick Lowden
 thumb: ../images/dd-framed.png
 ---
 

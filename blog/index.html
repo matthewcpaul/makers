@@ -1,0 +1,17 @@
+---
+layout: blog
+title: Blog
+order: 3
+---
+
+<ul class="c-post-list">
+  {% for posts in site.posts %}
+  <li class="c-post-list__item">
+    <a class="c-post-list__link" href="{{ posts.url | prepend: site.baseurl }}">
+      <h3 class="f2">{{ posts.title }}</h3>
+      <p class="c-post-list__meta">{{ posts.author }} · {{ posts.date | date: '%B %d, %Y' }}</p>
+    </a>
+    <img class="c-post-list__image" src="{{ posts.thumb }}" alt="Thumbnail">
+  </li>
+  {% endfor %}
+</ul>

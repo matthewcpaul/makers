@@ -2,4 +2,32 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  &__item + * {
+    margin-top: $spacing-md;
+  }
+
+  &__meta {
+    color: $gray-light;
+  }
+
+  &__link {
+    display: inline-block;
+    padding-left: $spacing-sm;
+    text-decoration: none;
+
+    @include breakpoint(32rem) {
+      padding-left: $spacing-md;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &__image {
+    max-height: 20rem;
+    object-fit: cover;
+    display: block;
+  }
 }
