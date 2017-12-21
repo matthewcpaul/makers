@@ -29,5 +29,13 @@
     max-height: 20rem;
     object-fit: cover;
     display: block;
+
+    @include breakpoint(52rem) {
+      max-height: 24rem;
+    }
+
+    @include breakpoint(92rem) {
+      max-height: 32rem;
+    }
   }
 }

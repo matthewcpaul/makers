@@ -7,16 +7,8 @@
   &__content {
     grid-column: 1 / span 6;
 
-    @include breakpoint(45rem) {
-      grid-column: 1 / span 5;
-    }
-
     @include breakpoint(52rem) {
       grid-column: 1 / span 4;
-    }
-
-    @include breakpoint(76rem) {
-      grid-column: 1 / span 3;
     }
   }
 
