@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Post Title
+title: Spare Time Isn’t Handed to You
 author: Noelle Hoffman
 thumb: ../images/dd-framed.png
 ---

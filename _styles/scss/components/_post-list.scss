@@ -1,23 +1,48 @@
 .c-post-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   margin: 0;
   padding: 0;
 
-  &__item + * {
-    margin-top: $spacing-md;
+  &__item:nth-child(odd) {
+    grid-column: 1 / span 6;
+
+    @include breakpoint(52rem) {
+      grid-column: 1 / span 3;
+    }
+  }
+
+  &__item:nth-child(even) {
+    grid-column: 1 / span 6;
+
+    @include breakpoint(52rem) {
+      grid-column: 4 / span 3;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-bottom: $spacing-xl;
   }
 
   &__meta {
     color: $gray-light;
+    margin-top: $spacing-xs;
   }
 
   &__link {
     display: inline-block;
-    padding-left: $spacing-sm;
+    padding-left: $spacing-md;
+    padding-right: $spacing-md;
+    margin-bottom: $spacing-md;
     text-decoration: none;
 
     @include breakpoint(32rem) {
-      padding-left: $spacing-md;
+      padding-left: $spacing-lg;
+      padding-right: $spacing-lg;
     }
 
     &:hover {

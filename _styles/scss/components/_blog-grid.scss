@@ -8,15 +8,15 @@
     grid-column: 1 / span 6;
 
     @include breakpoint(52rem) {
-      grid-column: 1 / span 4;
+      grid-column: 1 / span 3;
     }
   }
 
   &__post {
-    padding-left: $spacing-sm;
+    padding: 0 $spacing-md;
 
     @include breakpoint(32rem) {
-      padding-left: $spacing-md;
+      padding: 0 $spacing-lg;
     }
   }
 }

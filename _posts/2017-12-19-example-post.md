@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title: Post Title
+title: Shipping Four Magazines
 author: Patrick Lowden
 thumb: ../images/dd-framed.png
 ---
