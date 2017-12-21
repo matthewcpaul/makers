@@ -1,37 +1,116 @@
 @mixin font-size($i) {
-  $font-progression-steps: 4;
-  @if $i > $font-progression-steps or $i < -1 {
-    @warn 'Progression step #{$i} is outside of the ideal -1, 1-4 scope';
+  $font-progression-steps: 7;
+  @if $i > $font-progression-steps or $i < 0 {
+    @warn 'Progression step #{$i} is outside of the ideal 1-7 scope';
   }
-  @else if $i > -2 {
-    font-size: font-progression-math($i);
+  @else if $i > 0 {
+    font-size: font-progression-math($i, 8);
+
+    @include breakpoint(32rem) {
+      font-size: font-progression-math($i, 4);
+    }
+
+    @include breakpoint(100rem) {
+      font-size: font-progression-math($i, 2);
+    }
   }
   @else {
     @warn 'Progression step must be positive';
   }
 }
 
+@mixin font-xxl {
+  @include font-size(7);
+  line-height: 4rem;
+  font-weight: 200;
+
+  @include breakpoint(32rem) {
+    line-height: $font-xxl-line-height;
+  }
+
+  @include breakpoint(100rem) {
+    line-height: 10rem;
+  }
+}
+
+@mixin font-xl {
+  @include font-size(6);
+  line-height: 3.5rem;
+  font-weight: 200;
+
+  @include breakpoint(32rem) {
+    line-height: $font-xl-line-height;
+  }
+
+  @include breakpoint(100rem) {
+    line-height: 8rem;
+  }
+}
+
+@mixin font-lg {
+  @include font-size(5);
+  line-height: 3rem;
+  font-weight: 200;
+
+  @include breakpoint(32rem) {
+    line-height: $font-lg-line-height;
+  }
+
+  @include breakpoint(100rem) {
+    line-height: 6rem;
+  }
+}
+
 @mixin font-1 {
   @include font-size(4);
-  line-height: $font-1-line-height;
+  line-height: 2.5rem;
+  font-weight: 200;
+
+  @include breakpoint(32rem) {
+    line-height: $font-1-line-height;
+  }
+
+  @include breakpoint(100rem) {
+    line-height: 4.5rem;
+  }
 }
 
 @mixin font-2 {
   @include font-size(3);
-  line-height: $font-2-line-height;
+  line-height: 2rem;
+  font-weight: normal;
+
+  @include breakpoint(32rem) {
+    line-height: $font-2-line-height;
+  }
+
+  @include breakpoint(100rem) {
+    line-height: 3rem;
+  }
 }
 
 @mixin font-3 {
   @include font-size(2);
-  line-height: $font-3-line-height;
+  line-height: 1.75rem;
+  font-weight: normal;
+
+  @include breakpoint(32rem) {
+    line-height: $font-3-line-height;
+  }
 }
 
 @mixin font-4 {
   @include font-size(1);
   line-height: $font-4-line-height;
+  font-weight: normal;
 }
 
 @mixin font-5 {
-  @include font-size(-1);
-  line-height: $font-4-line-height;
+  font-size: 0.875em;
+  line-height: $font-5-line-height;
+}
+
+@mixin font-6 {
+  font-size: 0.75em;
+  line-height: $font-6-line-height;
 }

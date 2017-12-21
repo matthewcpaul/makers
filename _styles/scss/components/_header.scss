@@ -8,6 +8,7 @@ $header-bp: 45rem;
 	align-items: flex-start;
 	padding-top: $spacing-md;
 	padding-bottom: $spacing-md;
+	background-color: $white;
 
 	@include breakpoint($header-bp) {
 		flex-direction: row;

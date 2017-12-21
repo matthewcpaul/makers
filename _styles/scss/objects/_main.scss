@@ -2,9 +2,9 @@
 $main-namespace: "o-main" !default;
 
 .#{$main-namespace} {
-  padding-top: $spacing-xs;
+  padding-top: $spacing-lg;
 
-  @include breakpoint(45rem) {
-    padding-top: $spacing-md;
+  @include breakpoint(32rem) {
+    padding-top: $spacing-xxl;
   }
 }

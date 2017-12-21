@@ -1,5 +1,3 @@
-$font-size-change: 32rem;
-
 html, :root {
 	$font-fallback: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-family: 'PlexSans', $font-fallback;
@@ -9,12 +7,12 @@ html, :root {
 	box-sizing: border-box;
 }
 
-img {
-	width: 100%;
+body {
+	background-color: $gray-background;
 }
 
-p {
-	
+img {
+	width: 100%;
 }
 
 ::selection {
