@@ -14,7 +14,7 @@ headline: We’re bringing IBMers together to make and inspire.
         <use href='images/icon-store.svg#forward-tick' xlink:href='images/icon-store.svg#forward-tick'></use>
       </svg>
     </div>
-    <img class="c-project__image" src="{{ p.url | prepend: site.baseurl }}/images/dd-framed.png" alt="">
+    <img class="c-project__image" src="{{ p.url | prepend: site.baseurl }}{{ projects.thumb }}" alt="">
   </a>
 </li>
 {% endfor %}
