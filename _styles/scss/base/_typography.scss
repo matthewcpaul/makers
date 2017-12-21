@@ -1,26 +1,23 @@
 // Global namespace prefix for fonts
 $font-prefix: "f" !default;
 
-.#{$font-prefix} {
+.#{$font-prefix}1, h1 {
+  @include font-1;
+  font-weight: normal;
+}
 
-  &1 {
-    @include font-1;
-    font-weight: normal;
-  }
+.#{$font-prefix}2, h2 {
+  @include font-2;
+  font-weight: normal;
+}
 
-  &2 {
-    @include font-2;
-    font-weight: normal;
-  }
+.#{$font-prefix}3, h3 {
+  @include font-3;
+  font-weight: normal;
+}
 
-  &3 {
-    @include font-3;
-    font-weight: normal;
-  }
-
-  &4 {
-    @include font-4;
-  }
+.#{$font-prefix}4, h4 {
+  @include font-4;
 }
 
 .f-caption {

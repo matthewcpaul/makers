@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   margin: 0;
-  padding: 0;
+  padding: $spacing-xs 0 0 0;
 
   &__item:nth-child(odd) {
     grid-column: 1 / span 6;
@@ -24,18 +24,15 @@
   &__item {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-bottom: $spacing-xl;
   }
 
-  &__meta {
-    color: $gray-light;
-    margin-top: $spacing-xs;
-  }
-
   &__link {
-    display: inline-block;
+    display: flex;
+    flex-flow: column nowrap;
     text-decoration: none;
+    justify-content: space-between;
 
     &:hover {
       color: $primary;
@@ -58,6 +55,11 @@
     }
   }
 
+  &__meta {
+    color: $gray-light;
+    margin-top: $spacing-xs;
+  }
+
   &__image-container {
     max-height: 20rem;
     object-fit: cover;
@@ -74,6 +76,7 @@
   }
 
   &__image {
+    display: block;
     transition: all $animation-speed ease-in-out;
   }
 }
