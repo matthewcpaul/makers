@@ -35,25 +35,34 @@
 
   &__link {
     display: inline-block;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary;
+
+      & .c-post-list__image {
+        transform: rotate(-4deg) scale(1.125);
+        opacity: .75;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: $spacing-md;
     padding-left: $spacing-md;
     padding-right: $spacing-md;
-    margin-bottom: $spacing-md;
-    text-decoration: none;
 
     @include breakpoint(32rem) {
       padding-left: $spacing-lg;
       padding-right: $spacing-lg;
     }
-
-    &:hover {
-      color: $primary;
-    }
   }
 
-  &__image {
+  &__image-container {
     max-height: 20rem;
     object-fit: cover;
     display: block;
+    overflow: hidden;
 
     @include breakpoint(52rem) {
       max-height: 24rem;
@@ -62,5 +71,9 @@
     @include breakpoint(92rem) {
       max-height: 36rem;
     }
+  }
+
+  &__image {
+    transition: all $animation-speed ease-in-out;
   }
 }

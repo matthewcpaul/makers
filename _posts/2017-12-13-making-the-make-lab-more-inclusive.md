@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: blog-post
 title: Making the Make Lab More Inclusive
 author: Matthew Paul
 thumb: ../images/dd-framed.png

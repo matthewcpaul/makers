@@ -128,7 +128,7 @@ $animation-speed: .4s;
 
     @include breakpoint(32rem) {
       padding: 0 $spacing-lg $spacing-xs $spacing-lg;
-      margin-bottom: $spacing-lg;
+      margin-bottom: $spacing-xl;
     }
   }
 }

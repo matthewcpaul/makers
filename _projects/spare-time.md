@@ -1,4 +1,4 @@
 ---
 layout: project
-headline: This vs That
+headline: Spare Time
 ---
