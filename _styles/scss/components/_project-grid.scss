@@ -117,10 +117,12 @@ $animation-speed: .4s;
 .c-headline {
   padding: 0 $spacing-md;
   margin-bottom: $spacing-lg;
+  margin-top: $spacing-lg;
 
   @include breakpoint(32rem) {
     padding: 0 $spacing-lg;
     margin-bottom: $spacing-xxl;
+    margin-top: $spacing-xxl;
   }
 
   &--blog {

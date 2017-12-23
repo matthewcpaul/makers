@@ -1,14 +1,12 @@
 {% include root.html %}
 
 <div class="flex-main">
-	{% include header.html %}
+	{% include header-events.html %}
 	<main class="o-main" role="main">
 			<div class="o-grid-six">
-				<h1 class="f1 o-grid-six__child c-headline">{{ page.headline }}</h1>
+				<h1 class="f1 o-grid-six__child c-headline">{{ page.title }}</h1>
 			</div>
-			<ul class="c-project__grid">
-				{{ content }}
-			</ul>
+			{{ content }}
 	</main>
 </div>
 

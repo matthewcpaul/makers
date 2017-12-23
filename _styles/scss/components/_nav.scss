@@ -17,7 +17,7 @@ $nav-item-xl-bp: 45rem;
 
 		+.#{$nav-namespace}__item {
 			margin-left: $nav-item-margin-sm;
-			margin-top: 1.5rem;
+			margin-top: 2rem;
 
 			@include breakpoint($nav-item-md-bp) {
 				margin-left: $nav-item-margin-md;

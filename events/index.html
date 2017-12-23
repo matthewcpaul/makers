@@ -1,0 +1,20 @@
+---
+layout: events
+title: Events
+order: 2
+---
+<ul class="c-event-list">
+  {% for events in site.events %}
+  <li class="c-event-list__flag">
+    <div class="c-event-list__flag--left">
+      <img class="c-event-list__image" src="{{ p.url | prepend: site.baseurl }}{{ events.thumb }}" alt="">
+    </div>
+    <div class="c-event-list__flag--body">
+      <div class="c-event-list__content">
+        <h3 class="f2 c-event-list__title">{{ events.title }}</h3>
+        <p>{{ events.description }}</p>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

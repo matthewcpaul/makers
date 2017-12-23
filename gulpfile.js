@@ -51,7 +51,7 @@ gulp.task('serve', function() {
   });
 
   gulp.watch('_styles/scss/**/*.scss', gulp.series('local-build', 'sass', 'icons')).on('change', browserSync.reload);
-  gulp.watch(['_includes/*.html', '_layouts/*.html', 'index.md', '**/*.md', 'blog/index.html'], gulp.series('local-build', 'sass', 'icons'));
+  gulp.watch(['_includes/*.html', '_layouts/*.html', 'index.md', '**/*.md', 'blog/index.html', 'events/index.html'], gulp.series('local-build', 'sass', 'icons'));
   gulp.watch('_site/**/*.html').on('change', browserSync.reload);
 });
 

@@ -2,7 +2,7 @@
 $main-namespace: "o-main" !default;
 
 .#{$main-namespace} {
-  padding-top: $spacing-xxl;
+  padding-top: $spacing-jumbo;
 
   @include breakpoint(32rem) {
     padding-top: $spacing-jumbo;

@@ -1,0 +1,62 @@
+.c-event-list {
+  margin: 0;
+  padding: 0;
+
+  &__flag {
+    display: flex;
+    flex-flow: column nowrap;
+
+    & + * {
+      margin-top: $spacing-lg;
+    }
+
+    @include breakpoint(45rem) {
+      flex-flow: row nowrap;
+    }
+
+    &--left {
+      flex: 3 1 0;
+      background: gold;
+
+      @include breakpoint(45rem) {
+        display: flex;
+      }
+
+      @include breakpoint(68rem) {
+        flex: 1 1 0;
+      }
+    }
+
+    &--body {
+      flex: 4 1 0;
+      background-color: $white;
+
+      @include breakpoint(68rem) {
+        flex: 2 1 0;
+      }
+    }
+  }
+
+  &__image {
+    display: block;
+    object-fit: cover;
+    height: 50vw;
+
+    @include breakpoint(45rem) {
+      flex: 1 0 0;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    padding: $spacing-md;
+
+    @include breakpoint(32rem) {
+      padding: $spacing-lg;
+    }
+  }
+
+  &__title {
+    margin-bottom: $spacing-sm;
+  }
+}
