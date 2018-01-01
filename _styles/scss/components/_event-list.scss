@@ -2,13 +2,30 @@
   margin: 0;
   padding: 0;
 
-  &__flag {
-    display: flex;
-    flex-flow: column nowrap;
+  &__link {
+    display: block;
+    text-decoration: none;
 
     & + * {
       margin-top: $spacing-lg;
     }
+
+    &:hover {
+
+      & .c-event-list__image {
+        transform: rotate(-4deg) scale(1.125);
+        opacity: .75;
+      }
+
+      & .c-event-list__title {
+        color: $primary;
+      }
+    }
+  }
+
+  &__flag {
+    display: flex;
+    flex-flow: column nowrap;
 
     @include breakpoint(45rem) {
       flex-flow: row nowrap;
@@ -16,7 +33,7 @@
 
     &--left {
       flex: 3 1 0;
-      background: gold;
+      overflow: hidden;
 
       @include breakpoint(45rem) {
         display: flex;
@@ -37,8 +54,26 @@
     }
   }
 
+  &__calendar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: $spacing-sm $spacing-lg;
+    background-color: $white;
+    z-index: 1;
+  }
+
+  &__day, &__date {
+    display: block;
+  }
+
+  &__day {
+    color: $secondary;
+  }
+
   &__image {
     display: block;
+    transition: all $animation-speed ease-in-out;
     object-fit: cover;
     height: 50vw;
 

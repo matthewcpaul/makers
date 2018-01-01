@@ -1,9 +1,6 @@
 // Set the encoding of the style sheet to Unicode UTF-8
 @charset "UTF-8";
 
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-
 // Functions
 @import "../../node_modules/ibm-design-colors/ibm-colors";
 @import "functions/_all";
