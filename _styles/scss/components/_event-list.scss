@@ -59,9 +59,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: $spacing-sm $spacing-lg;
+    padding: $spacing-sm $spacing-md;
     background-color: $white;
     z-index: 1;
+
+    @include breakpoint(32rem) {
+      padding: $spacing-sm $spacing-lg;
+    }
   }
 
   &__day, &__date {
