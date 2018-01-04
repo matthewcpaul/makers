@@ -1,6 +1,6 @@
 ---
 layout: project
 headline: Circuits
-thumb: /images/dd-framed.png
+thumb: /images/make-lab__thumb.jpg
 order: 9
 ---
