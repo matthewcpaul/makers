@@ -3,10 +3,12 @@
 <div class="flex-main">
 	{% include header-events.html %}
 	<main class="o-main" role="main">
+		{% for events in site.events %}
 			<div class="o-grid-six">
 				<h1 class="f1 o-grid-six__child c-headline">{{ page.title }}</h1>
 			</div>
 			{{ content }}
+		{% endfor %}
 	</main>
 </div>
 
