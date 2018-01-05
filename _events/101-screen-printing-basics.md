@@ -1,6 +1,6 @@
 ---
 layout: default
-thumb: /images/dd-framed.png
+thumb: /images/event__screen-printing-basics.jpg
 title: Screen Printing Basics
 weekday: Wednesday
 month: January

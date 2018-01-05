@@ -1,6 +1,6 @@
 ---
 layout: project
 headline: Spare Time
-thumb: /images/make-lab__thumb.jpg
+thumb: /images/spare-time__thumb.png
 order: 4
 ---

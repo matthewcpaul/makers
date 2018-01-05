@@ -1,6 +1,6 @@
 ---
 layout: default
-thumb: /images/dd-framed.png
+thumb: /images/event__screen-printing-basics.jpg
 title: Moment to Make
 weekday: Thursday
 month: January
