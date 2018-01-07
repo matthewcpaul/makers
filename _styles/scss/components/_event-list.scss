@@ -2,27 +2,6 @@
   margin: 0;
   padding: 0;
 
-  &__link {
-    display: block;
-    text-decoration: none;
-
-    & + * {
-      margin-top: $spacing-lg;
-    }
-
-    &:hover {
-
-      & .c-event-list__image {
-        transform: rotate(-4deg) scale(1.125);
-        opacity: .75;
-      }
-
-      & .c-event-list__title {
-        color: $primary;
-      }
-    }
-  }
-
   &__flag {
     display: flex;
     flex-flow: column nowrap;
@@ -30,6 +9,10 @@
 
     @include breakpoint(45rem) {
       flex-flow: row nowrap;
+    }
+
+    & + * {
+      margin-top: $spacing-lg;
     }
 
     &--left {

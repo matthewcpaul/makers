@@ -1,0 +1,18 @@
+.c-button {
+  display: block;
+  text-decoration: none;
+  padding: $spacing-xs $spacing-sm;
+  background-color: $primary;
+  color: $white;
+  text-align: center;
+
+  @include breakpoint(32rem) {
+    display: inline-block;
+    padding: $spacing-base $spacing-md;
+  }
+
+  &:hover {
+    background-color: $primary-dark;
+    cursor: pointer;
+  }
+}

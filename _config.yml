@@ -26,5 +26,5 @@ collections:
     output: true
     permalink: projects/:path/
   events:
-    output: true
+    output: false
     permalink: events/:path/

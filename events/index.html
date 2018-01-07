@@ -5,22 +5,21 @@ order: 2
 ---
 <ul class="c-event-list">
   {% for events in site.events %}
-  <a class="c-event-list__link" href="{{ events.url | prepend: site.baseurl }}">
-    <li class="c-event-list__flag">
-        <div class="c-event-list__flag--left">
-          <div class="c-event-list__calendar">
-            <span class="c-event-list__day">{{ events.weekday }}</span>
-            <span class="f2 c-event-list__date">{{ events.date-number }}</span>
-          </div>
-          <img class="c-event-list__image" src="{{ p.url | prepend: site.baseurl }}{{ events.thumb }}" alt="">
+  <li class="c-event-list__flag">
+      <div class="c-event-list__flag--left">
+        <div class="c-event-list__calendar">
+          <span class="c-event-list__day">{{ events.weekday }}</span>
+          <span class="f2 c-event-list__date">{{ events.date-number }}</span>
         </div>
-        <div class="c-event-list__flag--body">
-          <div class="c-event-list__content">
-            <h3 class="f2 c-event-list__title">{{ events.title }}</h3>
-            <p>{{ events.description }}</p>
-          </div>
+        <img class="c-event-list__image" src="{{ p.url | prepend: site.baseurl }}{{ events.thumb }}" alt="">
+      </div>
+      <div class="c-event-list__flag--body">
+        <div class="c-event-list__content">
+          <h3 class="f2 c-event-list__title">{{ events.title }}</h3>
+          <p>{{ events.description }}</p>
+          <a class="c-button u-mt-2" href="{{ events.link }}">Sign Up</a>
         </div>
-    </li>
-  </a>
+      </div>
+  </li>
   {% endfor %}
 </ul>
