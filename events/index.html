@@ -2,13 +2,18 @@
 layout: events
 title: Events
 order: 2
+months:
+  - January
+  - February
+  - March
 ---
+{% for month in page.months %}
 <div class="o-grid-six">
-  <h1 class="f1 o-grid-six__child c-headline">January</h1>
+  <h2 class="f1 o-grid-six__child c-headline">{{ month }}</h2>
 </div>
-
 <ul class="c-event-list">
   {% for events in site.events %}
+  {% if events.month == month %}
   <li class="c-event-list__flag">
       <div class="c-event-list__flag--left">
         <div class="c-event-list__calendar">
@@ -25,5 +30,7 @@ order: 2
         </div>
       </div>
   </li>
+  {% endif %}
   {% endfor %}
 </ul>
+{% endfor %}
