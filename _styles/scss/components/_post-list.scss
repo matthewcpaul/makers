@@ -45,13 +45,11 @@
   }
 
   &__title {
-    margin-bottom: $spacing-md;
-    padding-left: $spacing-md;
-    padding-right: $spacing-md;
+    background-color: $white;
+    padding: $spacing-md;
 
     @include breakpoint(32rem) {
-      padding-left: $spacing-lg;
-      padding-right: $spacing-lg;
+      padding: $spacing-lg;
     }
   }
 
