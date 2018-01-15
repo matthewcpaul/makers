@@ -12,7 +12,7 @@ $header-bp: 45rem;
 	box-shadow: 0px 1px 32px 0px rgba(0,0,0,0.08);
 	position: fixed;
 	width: 100%;
-	z-index: 2;
+	z-index: 3;
 
 	@include breakpoint($header-bp) {
 		flex-direction: row;

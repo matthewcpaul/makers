@@ -56,7 +56,8 @@
   }
 
   &__meta {
-    color: $gray-light;
+    @include font-4;
+    color: $gray-medium;
     margin-top: $spacing-xs;
   }
 

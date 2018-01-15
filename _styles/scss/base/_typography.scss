@@ -27,3 +27,36 @@ $font-prefix: "f" !default;
 .f-bold {
   font-weight: bold;
 }
+
+p {
+  @include font-3;
+  color: $gray-medium;
+}
+
+p + p {
+  margin-top: $spacing-md;
+
+  @include breakpoint(52rem) {
+    margin-top: $spacing-lg;
+  }
+}
+
+h2 + p {
+  margin-top: $spacing-base;
+
+  @include breakpoint(52rem) {
+    margin-top: $spacing-sm;
+  }
+}
+
+p + h2 {
+  margin-top: $spacing-md;
+
+  @include breakpoint(52rem) {
+    margin-top: $spacing-lg;
+  }
+}
+
+img {
+  display: block;
+}

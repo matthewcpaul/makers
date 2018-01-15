@@ -97,6 +97,10 @@
   @include breakpoint(32rem) {
     line-height: $font-3-line-height;
   }
+
+  @include breakpoint(100rem) {
+    line-height: 2.5rem;
+  }
 }
 
 @mixin font-4 {

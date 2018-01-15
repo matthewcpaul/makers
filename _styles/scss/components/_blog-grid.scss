@@ -1,22 +1,50 @@
-.c-blog-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  margin: 0;
-  padding: 0;
+.c-blog-post {
+  position: relative;
 
-  &__content {
-    grid-column: 1 / span 6;
+  @include breakpoint(52rem) {
 
-    @include breakpoint(52rem) {
-      grid-column: 1 / span 3;
+    & > p > img {
+      height: 75vh;
+      object-fit: cover;
     }
   }
 
-  &__post {
+  @include breakpoint(92rem) {
+
+    & > p > img {
+      height: 65vh;
+    }
+  }
+
+  &__headline {
     padding: 0 $spacing-md;
+    margin: $spacing-lg 0;
 
     @include breakpoint(32rem) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: $spacing-sm $spacing-lg $spacing-md $spacing-lg;
+      margin-top: $spacing-xl;
+      background-color: $white;
+      z-index: 2;
+    }
+  }
+
+  &__content {
+    padding: 0 $spacing-md;
+
+    @include breakpoint(52rem) {
       padding: 0 $spacing-lg;
+      width: 75%;
+    }
+
+    @include breakpoint(64rem) {
+      width: 65%;
+    }
+
+    @include breakpoint(92rem) {
+      width: 50%;
     }
   }
 }
