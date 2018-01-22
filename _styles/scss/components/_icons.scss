@@ -4,4 +4,8 @@
     width: $spacing-sm;
     height: $spacing-sm;
   }
+
+  &--reverse {
+    fill: $white;
+  }
 }

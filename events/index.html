@@ -25,8 +25,19 @@ months:
       <div class="c-event-list__flag--body">
         <div class="c-event-list__content">
           <h3 class="f2 c-event-list__title">{{ events.title }}</h3>
-          <p>{{ events.description }}</p>
-          <a class="c-button u-mt-2" href="{{ events.link }}">Sign Up</a>
+          <p class="u-pb-xxl">{{ events.description }}</p>
+          <a class="c-button c-event-list__button" href="{{ events.link }}">
+            <div class="c-button__flag">
+              <div class="c-button__flag--body">
+                Sign Up
+              </div>
+              <div class="c-button__flag--right">
+                <svg class="c-icon--24 c-icon--reverse">
+                  <use href='../images/icon-store.svg#forward-tick' xlink:href='../images/icon-store.svg#forward-tick'></use>
+                </svg>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
   </li>

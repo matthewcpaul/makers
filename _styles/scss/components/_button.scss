@@ -1,18 +1,42 @@
+$signup-animation-speed: .25s;
+
 .c-button {
   display: block;
   text-decoration: none;
-  padding: $spacing-xs $spacing-sm;
+  padding: $spacing-base $spacing-md;
   background-color: $primary;
   color: $white;
-  text-align: center;
+  text-align: left;
 
   @include breakpoint(32rem) {
     display: inline-block;
-    padding: $spacing-base $spacing-md;
+    padding: $spacing-md $spacing-lg;
   }
 
   &:hover {
     background-color: $primary-dark;
     cursor: pointer;
+
+    & .c-button__flag--right {
+      padding-left: $spacing-lg;
+
+      @include breakpoint(32rem) {
+        padding-left: $spacing-xxl;
+      }
+    }
+  }
+
+  &__flag {
+    display: flex;
+    flex-flow: row nowrap;
+
+    &--right {
+      padding-left: $spacing-md;
+      transition: all $signup-animation-speed ease-in-out;
+
+      @include breakpoint(32rem) {
+        padding-left: $spacing-lg;
+      }
+    }
   }
 }
