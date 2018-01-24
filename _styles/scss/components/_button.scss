@@ -7,10 +7,15 @@ $signup-animation-speed: .25s;
   background-color: $primary;
   color: $white;
   text-align: left;
+  width: 100%;
 
   @include breakpoint(32rem) {
-    display: inline-block;
     padding: $spacing-md $spacing-lg;
+  }
+
+  @include breakpoint(45rem) {
+    display: inline-block;
+    width: auto;
   }
 
   &:hover {
@@ -18,7 +23,6 @@ $signup-animation-speed: .25s;
     cursor: pointer;
 
     & .c-button__flag--right {
-      padding-left: $spacing-lg;
 
       @include breakpoint(32rem) {
         padding-left: $spacing-xxl;
@@ -30,6 +34,7 @@ $signup-animation-speed: .25s;
     display: flex;
     flex-flow: row nowrap;
     max-height: $spacing-sm;
+    justify-content: space-between;
 
     &--right {
       padding-left: $spacing-md;

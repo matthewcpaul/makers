@@ -46,10 +46,10 @@
 
   &__title {
     background-color: $white;
-    padding: $spacing-md;
+    padding: $spacing-sm $spacing-md $spacing-md $spacing-md;
 
     @include breakpoint(32rem) {
-      padding: $spacing-lg;
+      padding: $spacing-sm $spacing-lg $spacing-md $spacing-lg;
     }
   }
 

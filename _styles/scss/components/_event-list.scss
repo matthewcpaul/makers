@@ -20,6 +20,7 @@
 
       @include breakpoint(45rem) {
         display: flex;
+        flex: 1 1 0;
       }
 
       @include breakpoint(68rem) {
@@ -31,6 +32,10 @@
       display: flex;
       background-color: $white;
       position: relative;
+
+      @include breakpoint(45rem) {
+        flex: 1.5 1 0;
+      }
 
       @include breakpoint(68rem) {
         flex: 2 1 0;

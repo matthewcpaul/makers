@@ -1,14 +1,6 @@
 .c-blog-post {
   position: relative;
 
-  @include breakpoint(52rem) {
-
-    & > p > img {
-      height: 75vh;
-      object-fit: cover;
-    }
-  }
-
   @include breakpoint(92rem) {
 
     & > p > img {
@@ -18,7 +10,7 @@
 
   &__headline {
     padding: $spacing-sm $spacing-md $spacing-md $spacing-md;
-    margin: $spacing-md 0 0;
+    margin: $spacing-md -#{$spacing-md} 0 -#{$spacing-md};
     background-color: $white;
 
     @include breakpoint(45rem) {
@@ -26,7 +18,7 @@
     }
 
     @include breakpoint(52rem) {
-      margin: $spacing-xl 0 0;
+      margin: $spacing-xl -#{$spacing-lg} 0 -#{$spacing-lg};
     }
   }
 
@@ -46,6 +38,18 @@
 
     @include breakpoint(92rem) {
       width: 50%;
+    }
+
+    & > p > img {
+      margin: 0 -#{$spacing-md};
+      width: calc(100% + #{$spacing-md} + #{$spacing-md});
+
+      @include breakpoint(52rem) {
+        height: 65vh;
+        object-fit: cover;
+        margin: 0 -#{$spacing-lg};
+        width: calc(100% + #{$spacing-lg} + #{$spacing-lg})
+      }
     }
   }
 }
