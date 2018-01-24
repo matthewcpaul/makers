@@ -78,7 +78,6 @@
 
   &__image-container {
     max-height: 20rem;
-    object-fit: cover;
     display: block;
     overflow: hidden;
 
@@ -93,6 +92,8 @@
 
   &__image {
     display: block;
+    object-fit: cover;
+    object-position: 50% 50%;
     transition: all $animation-speed ease-in-out;
   }
 }

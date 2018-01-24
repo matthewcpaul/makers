@@ -36,7 +36,7 @@ p {
 p + p {
   margin-top: $spacing-md;
 
-  @include breakpoint(52rem) {
+  @include breakpoint(100rem) {
     margin-top: $spacing-lg;
   }
 }
