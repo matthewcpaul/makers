@@ -1,13 +1,6 @@
 .c-blog-post {
   position: relative;
 
-  @include breakpoint(92rem) {
-
-    & > p > img {
-      height: 65vh;
-    }
-  }
-
   &__headline {
     padding: $spacing-sm $spacing-md $spacing-md $spacing-md;
     margin: $spacing-md -#{$spacing-md} 0 -#{$spacing-md};
@@ -52,12 +45,14 @@
 
       @include breakpoint(52rem) {
         height: 65vh;
+        max-height: 40rem;
         object-fit: cover;
         margin-left: -#{$spacing-lg};
         width: calc(100% + #{$spacing-lg} + #{$spacing-lg})
       }
 
       @include breakpoint(100rem) {
+        max-height: 60rem;
         margin-left: -#{$spacing-jumbo};
         width: calc(100% + #{$spacing-jumbo} + #{$spacing-jumbo})
       }

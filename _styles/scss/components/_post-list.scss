@@ -63,8 +63,16 @@
     margin-top: $spacing-xs;
 
     @include breakpoint(100rem) {
+      margin-top: $spacing-base;
+    }
+
+    &--large {
       @include font-3;
-      margin-top: $spacing-sm;
+      margin-top: $spacing-xs;
+
+      @include breakpoint(100rem) {
+        margin-top: $spacing-sm;
+      }
     }
   }
 
