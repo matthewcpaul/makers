@@ -17,26 +17,27 @@
   }
 
   &__headline {
-    padding: 0 $spacing-md;
-    margin: $spacing-lg 0;
+    padding: $spacing-sm $spacing-md $spacing-md $spacing-md;
+    margin: $spacing-md 0 0;
+    background-color: $white;
 
-    @include breakpoint(32rem) {
-      position: absolute;
-      top: 0;
-      left: 0;
+    @include breakpoint(45rem) {
       padding: $spacing-sm $spacing-lg $spacing-md $spacing-lg;
-      margin-top: $spacing-xl;
-      background-color: $white;
-      z-index: 2;
+    }
+
+    @include breakpoint(52rem) {
+      margin: $spacing-xl 0 0;
     }
   }
 
   &__content {
     padding: 0 $spacing-md;
+    margin-left: auto;
+    margin-right: auto;
 
     @include breakpoint(52rem) {
       padding: 0 $spacing-lg;
-      width: 75%;
+      width: 85%;
     }
 
     @include breakpoint(64rem) {

@@ -4,11 +4,13 @@
 	{% include header-blog.html %}
 	<main class="o-main" role="main">
 			<div class="c-blog-post">
-				<div class="c-blog-post__headline">
-					<h1 class="f1">{{ page.title }}</h1>
-					<p class="c-post-list__meta">{{ page.author }} · {{ page.date | date: '%B %d, %Y' }}</p>
+				<div class="c-blog-post__content">
+					<div class="c-blog-post__headline">
+						<h1 class="f1">{{ page.title }}</h1>
+						<p class="c-post-list__meta">{{ page.author }} · {{ page.date | date: '%B %d, %Y' }}</p>
+					</div>
+					{{ content }}
 				</div>
-			{{ content }}
 			</div>
 	</main>
 </div>

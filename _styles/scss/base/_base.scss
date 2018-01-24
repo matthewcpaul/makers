@@ -9,6 +9,8 @@ html, :root {
 
 body {
 	background-color: $gray-background;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 img {

@@ -29,6 +29,7 @@ $signup-animation-speed: .25s;
   &__flag {
     display: flex;
     flex-flow: row nowrap;
+    max-height: $spacing-sm;
 
     &--right {
       padding-left: $spacing-md;
