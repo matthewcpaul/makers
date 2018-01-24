@@ -3,7 +3,7 @@
 
   &__headline {
     padding: $spacing-sm $spacing-md $spacing-md $spacing-md;
-    margin: $spacing-md -#{$spacing-md} 0 -#{$spacing-md};
+    margin: 0 -#{$spacing-md};
     background-color: $white;
 
     @include breakpoint(45rem) {

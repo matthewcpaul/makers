@@ -67,8 +67,12 @@
     }
 
     &--large {
-      @include font-3;
+      @include font-4;
       margin-top: $spacing-xs;
+
+      @include breakpoint(32rem) {
+        @include font-3;
+      }
 
       @include breakpoint(100rem) {
         margin-top: $spacing-sm;

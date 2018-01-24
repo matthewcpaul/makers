@@ -33,10 +33,16 @@ $signup-animation-speed: .25s;
   &__flag {
     display: flex;
     flex-flow: row nowrap;
-    max-height: $spacing-sm;
+    align-items: center;
     justify-content: space-between;
 
+    &--body {
+      @include font-3;
+    }
+
     &--right {
+      display: flex;
+      align-items: center;
       padding-left: $spacing-md;
       transition: all $signup-animation-speed ease-in-out;
 
