@@ -51,12 +51,21 @@
     @include breakpoint(32rem) {
       padding: $spacing-sm $spacing-lg $spacing-md $spacing-lg;
     }
+
+    @include breakpoint(100rem) {
+      padding: $spacing-lg $spacing-lg $spacing-xl $spacing-lg;
+    }
   }
 
   &__meta {
     @include font-4;
     color: $gray-medium;
     margin-top: $spacing-xs;
+
+    @include breakpoint(100rem) {
+      @include font-3;
+      margin-top: $spacing-sm;
+    }
   }
 
   &__image-container {

@@ -14,11 +14,17 @@
     background-color: $white;
 
     @include breakpoint(45rem) {
-      padding: $spacing-sm $spacing-lg $spacing-md $spacing-lg;
+      padding-right: $spacing-lg;
+      padding-left: $spacing-lg;
     }
 
     @include breakpoint(52rem) {
       margin: $spacing-xl -#{$spacing-lg} 0 -#{$spacing-lg};
+    }
+
+    @include breakpoint(100rem) {
+      padding: $spacing-xl $spacing-jumbo $spacing-xl $spacing-jumbo;
+      margin: $spacing-xl -#{$spacing-jumbo} 0 -#{$spacing-jumbo};
     }
   }
 
@@ -36,7 +42,7 @@
       width: 65%;
     }
 
-    @include breakpoint(92rem) {
+    @include breakpoint(100rem) {
       width: 50%;
     }
 
@@ -47,8 +53,13 @@
       @include breakpoint(52rem) {
         height: 65vh;
         object-fit: cover;
-        margin: 0 -#{$spacing-lg};
+        margin-left: -#{$spacing-lg};
         width: calc(100% + #{$spacing-lg} + #{$spacing-lg})
+      }
+
+      @include breakpoint(100rem) {
+        margin-left: -#{$spacing-jumbo};
+        width: calc(100% + #{$spacing-jumbo} + #{$spacing-jumbo})
       }
     }
   }
