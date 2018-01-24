@@ -34,18 +34,18 @@ p {
 }
 
 p + p {
-  margin-top: $spacing-md;
+  margin-top: $spacing-sm;
 
-  @include breakpoint(100rem) {
-    margin-top: $spacing-lg;
+  @include breakpoint(32rem) {
+    margin-top: $spacing-md;
   }
 }
 
 h2 + p {
   margin-top: $spacing-base;
 
-  @include breakpoint(52rem) {
-    margin-top: $spacing-sm;
+  @include breakpoint(100rem) {
+    margin-top: $spacing-md;
   }
 }
 
