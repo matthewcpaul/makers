@@ -126,4 +126,8 @@ $animation-speed: .4s;
     padding: 0 $spacing-lg;
     margin: $spacing-xxl 0;
   }
+
+  &--no-pad {
+    padding: 0;
+  }
 }

@@ -26,8 +26,5 @@
     "gulp-sourcemaps": "^2.2.1",
     "gulp-svgstore": "^6.1.0",
     "ibm-design-colors": "^2.0.4"
-  },
-  "dependencies": {
-    "ibm-design-icons": "^2.1.3"
   }
 }

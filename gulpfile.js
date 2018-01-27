@@ -32,7 +32,7 @@ gulp.task('sass', function() {
 
 // Create icon-store.svg
 gulp.task('icons', function() {
-  return gulp.src(['node_modules/ibm-design-icons/dist/svg/**/*.svg', 'images/**/*.svg'])
+  return gulp.src(['images/**/*.svg'])
     .pipe(svgstore())
     .pipe(rename('icon-store.svg'))
     .pipe(gulp.dest('_site/images/'));
@@ -52,7 +52,6 @@ gulp.task('serve', function() {
 
   gulp.watch('_styles/scss/**/*.scss', gulp.series('local-build', 'sass', 'icons')).on('change', browserSync.reload);
   gulp.watch(['_includes/*.html', '_layouts/*.html', 'index.html', '**/*.md', 'blog/index.html', 'events/index.html'], gulp.series('local-build', 'sass', 'icons'));
-  gulp.watch('_site/**/*.html').on('change', browserSync.reload);
 });
 
 // Run sass, local-build, and serve
