@@ -67,7 +67,7 @@
   font-weight: 200;
 
   @include breakpoint(32rem) {
-    line-height: $font-1-line-height;
+    line-height: 3rem;
   }
 
   @include breakpoint(100rem) {
@@ -81,7 +81,7 @@
   font-weight: normal;
 
   @include breakpoint(32rem) {
-    line-height: $font-2-line-height;
+    line-height: 2.5rem;
   }
 
   @include breakpoint(100rem) {
@@ -95,7 +95,7 @@
   font-weight: normal;
 
   @include breakpoint(32rem) {
-    line-height: $font-3-line-height;
+    line-height: 2rem;
   }
 
   @include breakpoint(100rem) {
@@ -105,16 +105,16 @@
 
 @mixin font-4 {
   @include font-size(1);
-  line-height: $font-4-line-height;
+  line-height: 1.5rem;
   font-weight: normal;
 }
 
 @mixin font-5 {
   font-size: 0.875em;
-  line-height: $font-5-line-height;
+  line-height: 1.25rem;
 }
 
 @mixin font-6 {
   font-size: 0.75em;
-  line-height: $font-6-line-height;
+  line-height: 1rem;
 }

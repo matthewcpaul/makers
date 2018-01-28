@@ -1,0 +1,39 @@
+.o-about {
+
+  &__hero {
+    display: flex;
+    flex-flow: column nowrap;
+
+    @include breakpoint(68rem) {
+      flex-flow: row nowrap;
+    }
+  }
+
+  &__body {
+    flex: 1;
+    margin-top: $spacing-lg;
+    padding: 0 $spacing-md;
+
+    @include breakpoint(32rem) {
+      margin-top: $spacing-xxl;
+      padding: 0 $spacing-lg;
+    }
+  }
+
+  &__media {
+    flex: 1;
+    margin-top: $spacing-lg;
+
+    @include breakpoint(32rem) {
+      margin-top: $spacing-xxl;
+    }
+  }
+
+  &__article {
+    margin-top: $spacing-lg;
+
+    @include breakpoint(32rem) {
+      margin-top: $spacing-xxl;
+    }
+  }
+}

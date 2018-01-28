@@ -1,5 +1,4 @@
 ---
-layout: default
 thumb: /images/event__screen-printing-basics.jpg
 link: https://www.eventbrite.com/e/screen-printing-basics-tickets-41882948025
 title: Screen Printing Basics

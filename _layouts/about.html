@@ -3,12 +3,17 @@
 <div class="flex-main">
 	{% include header-about.html %}
 	<main class="o-main" role="main">
-			<div class="c-blog-post">
-				<div class="c-blog-post__content">
-					<h1 class="f1 c-headline c-headline--no-pad">{{ page.headline }}</h1>
-					{{ content }}
+			<article class="o-about__hero">
+				<div class="o-about__body">
+					<h1 class="f1">{{ page.headline }}</h1>
+					<p>{{ page.description-short }}</p>
+					<p>{{ page.description-long }}</p>
 				</div>
-			</div>
+				<div class="o-about__media">
+					<img src="{{ page.hero }}" alt="About hero image">
+				</div>
+			</article>
+			{{ content }}
 	</main>
 </div>
 

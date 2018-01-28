@@ -41,6 +41,14 @@ p + p {
   }
 }
 
+h1 + p {
+  margin-top: $spacing-sm;
+
+  @include breakpoint(32rem) {
+    margin-top: $spacing-lg;
+  }
+}
+
 h2 + p {
   margin-top: $spacing-base;
 
