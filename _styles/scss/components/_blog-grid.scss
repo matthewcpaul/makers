@@ -6,9 +6,8 @@
     margin: 0 -#{$spacing-md};
     background-color: $white;
 
-    @include breakpoint(45rem) {
-      padding-right: $spacing-lg;
-      padding-left: $spacing-lg;
+    @include breakpoint(32rem) {
+      padding: $spacing-lg;
     }
 
     @include breakpoint(52rem) {
