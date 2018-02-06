@@ -1,6 +1,6 @@
 ---
 layout: project
 headline: Sticker Exchange
-thumb: /images/sticker-exchange__thumb.png
+thumb: /images/project-thumbnails/sticker-exchange.jpg
 order: 8
 ---
