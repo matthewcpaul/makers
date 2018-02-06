@@ -1,13 +1,11 @@
 ---
 layout: blog-post
-title: Global Sticker Exchange
+title: Sticker Exchange
 author: Jenny Hsiao Sanchez
 thumb: ../images/blog/sticker-exchange/sticker-exchange-hero.jpg
 ---
 
 ![Sticker Exchange hero image](../images/blog/sticker-exchange/sticker-exchange-hero.jpg)
-
-## 2017 Global Studio Summit sticker sheet
 
 Promoting a healthy and positive studio cultural has been a challenge for studios big and small around the world. This is shocking to many, considering the investment and effort IBM has put into creating a global makers culture. At IBM, there are so many talented makers hidden in the plain sight, but luckily, we have the support of the studio to share our love for making. Over the past three months, I’ve been part of this movement via the Sticker Exchange. This is our story:
 
