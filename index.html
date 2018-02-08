@@ -1,21 +1,21 @@
 ---
-layout: projects
-title: Projects
+layout: programs
+title: Programs
 order: 1
 headline: We’re bringing IBMers together to make and inspire each other
 ---
 
-{% assign projects = site.projects | sort:"order" %}
-{% for projects in projects %}
+{% assign programs = site.programs | sort:"order" %}
+{% for programs in programs %}
 <li class="c-project__list-item">
-  <a class="c-project__list-anchor" href="{{ projects.url | prepend: site.baseurl }}">
+  <a class="c-project__list-anchor" href="{{ programs.url | prepend: site.baseurl }}">
     <div class="c-project__title-container">
-      <h2 class="f3 c-project__title">{{ projects.headline }}</h2>
+      <h2 class="f3 c-project__title">{{ programs.headline }}</h2>
       <svg class="c-project__icon c-icon--24">
         <use href='images/icon-store.svg#forward-tick' xlink:href='images/icon-store.svg#forward-tick'></use>
       </svg>
     </div>
-    <img class="c-project__image" src="{{ p.url | prepend: site.baseurl }}{{ projects.thumb }}" alt="">
+    <img class="c-project__image" src="{{ p.url | prepend: site.baseurl }}{{ programs.thumb }}" alt="">
   </a>
 </li>
 {% endfor %}

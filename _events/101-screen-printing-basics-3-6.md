@@ -1,6 +1,6 @@
 ---
 thumb: /images/event__screen-printing-basics.jpg
-link: https://www.eventbrite.com/e/screen-printing-basics-tickets-41882948025
+link: https://ec.w3bmix.ibm.com/session.html?id=96D5DD678969FADF8525822E001BCE82
 title: Screen Printing Basics
 weekday: Wednesday
 month: March
