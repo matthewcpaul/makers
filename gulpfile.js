@@ -19,11 +19,7 @@ gulp.task('production-build', shell.task(['bundle exec jekyll build --config _co
 // Compile SCSS into CSS, sourcemaps, autoprefixer, cssnano + auto-inject into browsers
 gulp.task('sass', function() {
   return gulp.src(['_styles/scss/style.scss'])
-  .pipe(sass({
-    includePaths: [
-      'node_modules/ibm-design-colors',
-    ]
-  }))
+  .pipe(sass({}))
   .pipe(autoprefixer())
   .pipe(nano({discardComments: {removeAll: true}}))
   .pipe(gulp.dest('_site/assets/css'))
