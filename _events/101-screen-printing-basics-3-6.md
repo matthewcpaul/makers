@@ -1,5 +1,5 @@
 ---
-thumb: /images/event__screen-printing-basics.jpg
+thumb: /images/event-thumbnails/screen-printing-basics.jpg
 link: https://ec.w3bmix.ibm.com/session.html?id=96D5DD678969FADF8525822E001BCE82
 title: Screen Printing Basics
 weekday: Wednesday

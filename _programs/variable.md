@@ -1,6 +1,6 @@
 ---
 layout: program
 headline: Variable
-thumb: /images/variable__thumb.jpg
+thumb: /images/program-thumbnails/variable.jpg
 order: 3
 ---

@@ -1,6 +1,6 @@
 ---
 layout: program
 headline: Circuits
-thumb: /images/circuits__thumb.jpg
+thumb: /images/program-thumbnails/circuits.jpg
 order: 9
 ---

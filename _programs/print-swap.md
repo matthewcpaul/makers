@@ -1,6 +1,6 @@
 ---
 layout: program
 headline: Print Swap
-thumb: /images/print-swap__thumb.jpg
+thumb: /images/program-thumbnails/print-swap.jpg
 order: 5
 ---

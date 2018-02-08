@@ -1,6 +1,6 @@
 ---
 layout: program
 headline: Moment to Make
-thumb: /images/moment-to-make__thumb.jpg
+thumb: /images/program-thumbnails/moment-to-make.jpg
 order: 7
 ---

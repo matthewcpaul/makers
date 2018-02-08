@@ -10,7 +10,13 @@
 					<p>{{ page.description-long }}</p>
 				</div>
 				<div class="o-about__media">
-					<img src="{{ p.url | prepend: site.baseurl }}{{ page.hero }}" alt="About hero image">
+					<img class="o-about__hero-img"src="{{ p.url | prepend: site.baseurl }}{{ page.hero }}" alt="About hero image">
+				</div>
+			</article>
+			<article class="o-about__studios">
+				<div class="o-about__body">
+					<h2>{{ page.studio-headline }}</h2>
+					<h3>{{ page.studio-names }}</h3>
 				</div>
 			</article>
 			{{ content }}

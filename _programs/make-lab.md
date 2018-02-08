@@ -1,6 +1,6 @@
 ---
 layout: program
 headline: Make Lab
-thumb: /images/make-lab__thumb.jpg
+thumb: /images/program-thumbnails/make-lab.jpg
 order: 1
 ---

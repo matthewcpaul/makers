@@ -46,8 +46,8 @@ gulp.task('serve', function() {
     server: { baseDir: '_site/' }
   });
 
-  gulp.watch('_styles/scss/**/*.scss', gulp.series('local-build', 'sass', 'icons')).on('change', browserSync.reload);
-  gulp.watch(['_includes/*.html', '_layouts/*.html', 'index.html', '**/*.md', 'blog/index.html', 'events/index.html'], gulp.series('local-build', 'sass', 'icons'));
+  gulp.watch('_styles/scss/**/*.scss', gulp.series('local-build', 'sass', 'fonts', 'icons')).on('change', browserSync.reload);
+  gulp.watch(['_includes/*.html', '_layouts/*.html', 'index.html', '**/*.md', 'blog/index.html', 'events/index.html'], gulp.series('local-build', 'sass', 'fonts', 'icons'));
 });
 
 // Run sass, local-build, and serve

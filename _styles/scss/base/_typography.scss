@@ -57,6 +57,14 @@ h2 + p {
   }
 }
 
+h2 + h3 {
+  margin-top: $spacing-base;
+
+  @include breakpoint(100rem) {
+    margin-top: $spacing-md;
+  }
+}
+
 p + h2 {
   margin-top: $spacing-md;
 

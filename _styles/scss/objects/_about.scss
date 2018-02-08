@@ -4,36 +4,35 @@
     display: flex;
     flex-flow: column nowrap;
 
-    @include breakpoint(68rem) {
+    @include breakpoint(64rem) {
       flex-flow: row nowrap;
     }
   }
 
+  &__studios {
+    background-color: $white;
+  }
+
   &__body {
     flex: 1;
-    margin-top: $spacing-lg;
-    padding: 0 $spacing-md;
+    padding: $spacing-lg $spacing-md;
 
-    @include breakpoint(32rem) {
-      margin-top: $spacing-xxl;
-      padding: 0 $spacing-lg;
+    @include breakpoint(64rem) {
+      padding: $spacing-xxl $spacing-lg;
     }
   }
 
   &__media {
     flex: 1;
-    margin-top: $spacing-lg;
-
-    @include breakpoint(32rem) {
-      margin-top: $spacing-xxl;
-    }
   }
 
-  &__article {
-    margin-top: $spacing-lg;
+  &__hero-img {
+    max-height: 60vh;
+    object-fit: cover;
 
-    @include breakpoint(32rem) {
-      margin-top: $spacing-xxl;
+    @include breakpoint(64rem) {
+      height: 100%;
+      max-height: 100%;
     }
   }
 }

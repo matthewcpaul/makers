@@ -1,5 +1,5 @@
 ---
-thumb: /images/event__screen-printing-basics.jpg
+thumb: /images/event-thumbnails/screen-printing-basics.jpg
 link: https://www.eventbrite.com/e/screen-printing-basics-tickets-41882948025
 title: Screen Printing Basics
 weekday: Wednesday

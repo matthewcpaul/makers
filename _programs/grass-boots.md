@@ -1,6 +1,6 @@
 ---
 layout: program
 headline: Grass Boots
-thumb: /images/grass-boots__thumb.png
+thumb: /images/program-thumbnails/grass-boots.jpg
 order: 6
 ---
