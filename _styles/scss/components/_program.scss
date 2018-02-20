@@ -1,0 +1,45 @@
+.c-program {
+
+  &__headline {
+    padding: 0 $spacing-md;
+    margin-top: $spacing-lg;
+
+    @include breakpoint(32rem) {
+      padding: 0 $spacing-lg;
+      margin-top: $spacing-xxl;
+    }
+  }
+
+  &__description {
+    padding: 0 $spacing-md;
+    margin-top: $spacing-xs;
+
+    @include breakpoint(32rem) {
+      padding: 0 $spacing-lg;
+      margin-top: $spacing-base;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: $spacing-md;
+
+    @include breakpoint(32rem) {
+      margin-top: $spacing-xl;
+    }
+
+    &-item {
+      padding: 0 $spacing-md;
+
+      @include breakpoint(32rem) {
+        padding: 0 $spacing-lg;
+      }
+    }
+
+    &-detail {
+      margin-top: 0;
+    }
+  }
+}

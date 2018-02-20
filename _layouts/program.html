@@ -4,10 +4,28 @@
 	{% include header-program.html %}
 	<main class="o-main" role="main">
 			<div class="o-grid-six">
-				<h1 class="f1 o-grid-six__child c-headline">{{ page.headline }}</h1>
+				<h1 class="f1 o-grid-six__child c-program__headline">{{ page.headline }}</h1>
+				<p class="f3 o-grid-six__child c-program__description">{{ page.description }}</p>
 			</div>
-			<ul class="c-project__grid">
-				{{ content }}
+			<ul class="o-grid-thirds c-program__list">
+				<li class="o-grid-thirds__child--1 c-program__list-item">
+					<h4 class="f4 f-bold">Chapters</h4>
+					{% for chapter in page.chapters %}
+					<p class="c-program__list-detail">{{ page.chapters }}</p>
+					{% endfor %}
+				</li>
+				<li class="o-grid-thirds__child--2 c-program__list-item">
+					<h4 class="f4 f-bold">Leads</h4>
+					{% for lead in page.leads %}
+					<p class="c-program__list-detail">{{ lead }}</p>
+					{% endfor %}
+				</li>
+				<li class="o-grid-thirds__child--3 c-program__list-item">
+					<h4 class="f4 f-bold">Slack Channels</h4>
+					{% for channel in page.channels %}
+					<p class="c-program__list-detail">{{ page.channels }}</p>
+					{% endfor %}
+				</li>
 			</ul>
 	</main>
 </div>

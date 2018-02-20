@@ -17,13 +17,25 @@
     flex: 1;
     padding: $spacing-lg $spacing-md;
 
-    @include breakpoint(64rem) {
+    @include breakpoint(32rem) {
       padding: $spacing-xxl $spacing-lg;
+    }
+
+    @include breakpoint(45rem) {
+      padding-right: $spacing-xl;
+    }
+
+    @include breakpoint(76rem) {
+      flex: 2;
     }
   }
 
   &__media {
     flex: 1;
+
+    @include breakpoint(76rem) {
+      flex: 3;
+    }
   }
 
   &__hero-img {
