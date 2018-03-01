@@ -20,5 +20,5 @@ chapters:
     leads:
       - Marie Lee
     channels:
-      - '#make-lab-austin'
+      - '#make-lab-toronto'
 ---
