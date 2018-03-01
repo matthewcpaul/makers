@@ -16,25 +16,25 @@
 					<img class="c-program__media-one-child" src="{{ page.image3 | prepend: site.baseurl }}" alt="">
 				</div>
 			</div>
+			<h2 class="f2 c-program__headline">Chapters</h2>
 			<ul class="o-grid-thirds c-program__list">
-				<li class="o-grid-thirds__child--1 c-program__list-item">
-					<h4 class="f4 f-bold">Chapters</h4>
-					{% for chapter in page.chapters %}
-					<p class="c-program__list-detail">{{ page.chapters }}</p>
-					{% endfor %}
+				{% for chapter in page.chapters %}
+				<li class="o-grid-thirds__child c-program__list-item">
+					<h3 class="f3 f-bold c-program__chapter">{{ chapter.name }}</h3>
+					<h4 class="f4 f-bold c-program__chapter-subtitle">Leads</h4>
+					<ul class="c-program__lead-list">
+  					{% for lead in chapter.leads %}
+    				<li class="c-program__lead-list-item">{{ lead }}</li>
+  					{% endfor %}
+					</ul>
+					<h4 class="f4 f-bold c-program__chapter-subtitle">Slack Channels</h4>
+					<ul class="c-program__lead-list">
+  					{% for channel in chapter.channels %}
+    				<li class="c-program__lead-list-item">{{ channel }}</li>
+  					{% endfor %}
+					</ul>
 				</li>
-				<li class="o-grid-thirds__child--2 c-program__list-item">
-					<h4 class="f4 f-bold">Leads</h4>
-					{% for lead in page.leads %}
-					<p class="c-program__list-detail">{{ lead }}</p>
-					{% endfor %}
-				</li>
-				<li class="o-grid-thirds__child--3 c-program__list-item">
-					<h4 class="f4 f-bold">Slack Channels</h4>
-					{% for channel in page.channels %}
-					<p class="c-program__list-detail">{{ page.channels }}</p>
-					{% endfor %}
-				</li>
+				{% endfor %}
 			</ul>
 	</main>
 </div>

@@ -8,11 +8,17 @@ image1: /images/programs/make-lab/make-lab-hursley.jpg
 image2: /images/programs/make-lab/make-lab-dd.jpg
 image3: /images/programs/make-lab/make-lab-newyork.jpg
 chapters:
-  - Austin
-leads:
-  - Matthew Paul
-  - Zak Crapo
-  - Alison Entsminger
-channels:
-  - '#make-lab'
+  -
+    name: Austin
+    leads:
+      - Matthew Paul
+      - Zak Crapo
+    channels:
+      - '#make-lab-austin'
+  -
+    name: Toronto
+    leads:
+      - Marie Lee
+    channels:
+      - '#make-lab-austin'
 ---
