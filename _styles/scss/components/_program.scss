@@ -88,11 +88,38 @@
 
   @mixin program-list-card($background) {
     padding: $spacing-sm $spacing-md;
-    border-right: 2px solid $gray-background;
+    border-top: 1px solid $gray-background;
+    border-bottom: 1px solid $gray-background;
     background-color: $background;
+
+    &:first-child {
+      border-top: 0;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
 
     @include breakpoint(32rem) {
       padding: $spacing-lg $spacing-lg;
+      border-top: 0;
+      border-right: 1px solid $gray-background;
+      border-bottom: 0;
+      border-left: 1px solid $gray-background;
+
+      &:first-child {
+        border-left: 0;
+      }
+
+      &:nth-child(2n) {
+        border-right: 0;
+      }
+    }
+
+    @include breakpoint(45rem) {
+
+      &:nth-child(3n) {
+        border-right: 0;
+      }
     }
   }
 
@@ -124,13 +151,6 @@
         margin-top: $spacing-base;
       }
     }
-
-    &-leads {
-      margin-top: 0;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
   }
 
   &__lead-list {
@@ -139,5 +159,11 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    &-item {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 }
