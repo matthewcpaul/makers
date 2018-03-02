@@ -135,6 +135,8 @@
 
     &-item {
       @include program-list-card($white);
+      display: flex;
+      flex-flow: column nowrap;
 
       &--alt {
         @include program-list-card($gray-background);
@@ -143,6 +145,13 @@
   }
 
   &__chapter {
+
+    &-data {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      height: 100%;
+    }
 
     &-subtitle {
       margin-top: $spacing-xs;

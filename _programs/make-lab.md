@@ -13,12 +13,14 @@ chapters:
     leads:
       - Matthew Paul
       - Zak Crapo
+      - Alison Entsminger
     channels:
       - '#make-lab-austin'
   -
     name: Toronto
     leads:
       - Marie Lee
+      - Lehel Babos
     channels:
       - '#make-lab-toronto'
 ---
