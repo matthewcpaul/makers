@@ -3,7 +3,12 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   margin: 0;
-  padding: $spacing-xs 0 0 0;
+  padding: 0;
+  margin-bottom: -#{$spacing-md};
+
+  @include breakpoint(32rem) {
+    margin-bottom: -#{$spacing-xl};
+  }
 
   &__item:nth-child(odd) {
     grid-column: 1 / span 6;
@@ -25,7 +30,11 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
-    margin-bottom: $spacing-xl;
+    margin-bottom: $spacing-md;
+
+    @include breakpoint(32rem) {
+      margin-bottom: $spacing-xl;
+    }
   }
 
   &__link {

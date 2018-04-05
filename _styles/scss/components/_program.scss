@@ -86,21 +86,13 @@
     }
   }
 
-  @mixin program-list-card($background) {
-    padding: $spacing-sm $spacing-md;
-    border-top: 1px solid $gray-background;
-    border-bottom: 1px solid $gray-background;
-    background-color: $background;
-
-    &:first-child {
-      border-top: 0;
-    }
-    &:last-child {
-      border-bottom: 0;
-    }
+  @mixin program-list-card($card-background) {
+    padding: $spacing-md;
+    background-color: $card-background;
+    margin-bottom: $spacing-md;
 
     @include breakpoint(32rem) {
-      padding: $spacing-lg $spacing-lg;
+      padding: $spacing-lg;
       border-top: 0;
       border-right: 1px solid $gray-background;
       border-bottom: 0;
@@ -128,6 +120,7 @@
     margin-left: 0;
     padding-left: 0;
     margin-top: $spacing-md;
+    margin-bottom: -#{$spacing-md};
 
     @include breakpoint(32rem) {
       margin-top: $spacing-lg;
