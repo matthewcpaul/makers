@@ -2,19 +2,19 @@
   display: flex;
   flex-flow: column nowrap;
 
-  @include breakpoint(32rem) {
-    flex-flow: row nowrap;
+  @include breakpoint(45rem) {
+    flex-flow: row wrap;
   }
 }
 
 .o-grid-thirds__child {
   width: 100%;
 
-  @include breakpoint(32rem) {
+  @include breakpoint(45rem) {
     width: 50%;
   }
 
-  @include breakpoint(45rem) {
+  @include breakpoint(68rem) {
     width: 33.3333%;
   }
 }

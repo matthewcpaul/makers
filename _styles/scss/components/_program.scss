@@ -86,32 +86,14 @@
     }
   }
 
-  @mixin program-list-card($card-background) {
+  @mixin program-list-card($card-background, $card-border) {
+    $border-width: 2px;
     padding: $spacing-md;
     background-color: $card-background;
-    margin-bottom: $spacing-md;
+    border: $border-width solid $card-border;
 
     @include breakpoint(32rem) {
       padding: $spacing-lg;
-      border-top: 0;
-      border-right: 1px solid $gray-background;
-      border-bottom: 0;
-      border-left: 1px solid $gray-background;
-
-      &:first-child {
-        border-left: 0;
-      }
-
-      &:nth-child(2n) {
-        border-right: 0;
-      }
-    }
-
-    @include breakpoint(45rem) {
-
-      &:nth-child(3n) {
-        border-right: 0;
-      }
     }
   }
 
@@ -119,20 +101,14 @@
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
-    margin-top: $spacing-md;
-    margin-bottom: -#{$spacing-md};
-
-    @include breakpoint(32rem) {
-      margin-top: $spacing-lg;
-    }
 
     &-item {
-      @include program-list-card($white);
+      @include program-list-card($gray-background, $white);
       display: flex;
       flex-flow: column nowrap;
 
       &--alt {
-        @include program-list-card($gray-background);
+        @include program-list-card($white, $gray-background);
       }
     }
   }
