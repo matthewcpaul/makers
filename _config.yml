@@ -22,9 +22,9 @@ assets:
 
 # Read and Output Collections
 collections:
-  programs:
+  projects:
     output: true
-    permalink: programs/:path/
+    permalink: projects/:path/
   events:
     output: false
     permalink: events/:path/
