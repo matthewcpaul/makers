@@ -60,4 +60,10 @@ chapters:
       - Clara MacDonell
     channels:
       - '#ibm-makes-rtp'
+  -
+    name: San Francisco
+    leads:
+      - Weina Chen
+    channels:
+      - '#ibm-makes-sf'
 ---
