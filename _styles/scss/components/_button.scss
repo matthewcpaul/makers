@@ -9,13 +9,26 @@ $signup-animation-speed: .25s;
   text-align: left;
   width: 100%;
 
+  &:not(:first-child) {
+    margin-top: $spacing-xxs;
+  }
+
   @include breakpoint(32rem) {
     padding: $spacing-md $spacing-lg;
+
+    &:not(:first-child) {
+      margin-top: $spacing-xs;
+    }
   }
 
   @include breakpoint(45rem) {
     display: inline-block;
     width: auto;
+    margin-top: 0;
+
+    &:not(:first-child) {
+      margin-left: $spacing-xxs;
+    }
   }
 
   &:hover {

@@ -20,6 +20,20 @@
 						</div>
 					</div>
 				</a>
+				{% if page.website %}
+				<a class="c-button" href="{{ page.website }}">
+					<div class="c-button__flag">
+						<div class="c-button__flag--body">
+							{{ page.website-string }}
+						</div>
+						<div class="c-button__flag--right">
+							<svg class="c-icon--24 c-icon--reverse">
+								<use href='../../images/icon-store.svg#forward-tick' xlink:href='../../images/icon-store.svg#forward-tick'></use>
+							</svg>
+						</div>
+					</div>
+				</a>
+				{% endif %}
 			</div>
 			<div class="c-program__media">
 				<div class="c-program__media-two">
