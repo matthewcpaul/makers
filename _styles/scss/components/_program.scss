@@ -20,14 +20,17 @@
     }
   }
 
+  &__links {
+    margin-top: $spacing-lg;
+
+    @include breakpoint(32rem) {
+      margin-top: $spacing-xxl;
+    }
+  }
+
   &__media {
     display: flex;
     flex-flow: column nowrap;
-    margin-top: $spacing-md;
-
-    @include breakpoint(32rem) {
-      margin-top: $spacing-lg;
-    }
 
     @include breakpoint(45rem) {
       flex-flow: row nowrap;

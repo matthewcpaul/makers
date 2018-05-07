@@ -11,59 +11,40 @@ chapters:
     name: Astor Place
     leads:
       - Crystal Ginn
-    channels:
-      - '#ibm-makes-astor'
   -
     name: Austin
     leads:
       - Noelle Hoffman
-      - Matthew Paul
       - Zak Crapo
       - Randy Gregory
-    channels:
-      - '#ibm-makes-austin'
   -
     name: Böblingen
     leads:
       - Felix Herrmann
       - Ellice Heintze
-    channels:
-      - '#ibm-makes-boblingen'
   -
     name: Cambridge
     leads:
       - Jake Green
-    channels:
-      - '#ibm-makes-cambridge'
   -
     name: Dublin
     leads:
       - Lara Hanlon
-    channels:
-      - '#ibm-makes-dublin'
   -
     name: Hursley
     leads:
       - Sam Winslet
-    channels:
-      - '#ibm-makes-hursley'
   -
     name: Poughkeepsie
     leads:
       - Adaoha Onyekwelu
       - Meghan McGrath
-    channels:
-      - '#ibm-makes-poughkeepsie'
   -
     name: RTP
     leads:
       - Clara MacDonell
-    channels:
-      - '#ibm-makes-rtp'
   -
     name: San Francisco
     leads:
       - Weina Chen
-    channels:
-      - '#ibm-makes-sf'
 ---

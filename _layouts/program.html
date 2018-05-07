@@ -7,6 +7,20 @@
 				<h1 class="f1 o-grid-six__child c-program__headline">{{ page.headline }}</h1>
 				<p class="f3 o-grid-six__child c-program__description">{{ page.description }}</p>
 			</div>
+			<div class="c-program__links">
+				<a class="c-button" href="slack://channel?team={{ page.slack-team }}&id={{ page.slack-channel }}">
+					<div class="c-button__flag">
+						<div class="c-button__flag--body">
+							Join us on Slack
+						</div>
+						<div class="c-button__flag--right">
+							<svg class="c-icon--24 c-icon--reverse">
+								<use href='../../images/icon-store.svg#forward-tick' xlink:href='../../images/icon-store.svg#forward-tick'></use>
+							</svg>
+						</div>
+					</div>
+				</a>
+			</div>
 			<div class="c-program__media">
 				<div class="c-program__media-two">
 					<img class="c-program__media-two-child" src="{{ page.image1 | prepend: site.baseurl }}" alt="">
